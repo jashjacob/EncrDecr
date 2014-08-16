@@ -10,27 +10,19 @@ class EncrDecr
        int len=xyz.length();  //length of string
 
        final int mid = (xyz.length()+1) / 2;
-       String[] spstr = {
-       	xyz.substring(0, mid),
-       	xyz.substring(mid),
-    };  //splitting the string into two
+       String[] spstr = {xyz.substring(0, mid),xyz.substring(mid)};  //splitting the string into half
 
     String firstMix=spstr[1]+spstr[0];  //swapping the first half of string with the last half
     
     char[] chars=firstMix.toCharArray(); // converting the string into an array for swapping characters
 
-
-      // Swap first two chars with last two chars
+     // Swapping first two chars with last two chars
     swap( chars, 0, chars.length - 2 );
     swap( chars, 1, chars.length - 1 );
 
-     //   System.out.println( "Pass 2: " + new String( chars ) );
-
-        // Swap middle 4 characters.
+     // Swapping middle 4 characters.
     swap( chars, mid - 1, mid + 1 );
     swap( chars, mid - 2, mid );
-    //    System.out.println( "Pass 3: " + new String( chars ) );
-
 
       //running a character susbtituion 
        /*
@@ -95,7 +87,7 @@ class EncrDecr
        	}
        }
 
-	return chars;	//returning the encrypted word
+	return chars;	//returning the encrypted string
 }
 
 public static void swap( char[] chars, int l, int r ) {
