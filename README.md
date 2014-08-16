@@ -1,0 +1,4 @@
+EncrDecr
+========
+
+Simple encryption algorithm
