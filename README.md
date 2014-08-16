@@ -1,4 +1,4 @@
-EncrDecr
+Simple Encryption
 ========
 
 Simple encryption in Java
