@@ -1,4 +1,4 @@
 EncrDecr
 ========
 
-Simple encryption algorithm
+Simple encryption java program
