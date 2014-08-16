@@ -9,7 +9,7 @@ class EncrDecr
        xyz=xyz.toUpperCase(); // first converting to upper case
        int len=xyz.length();  //length of string
 
-       char[] cArray = xyz.toCharArray();
+       char[] cArray = xyz.toCharArray();  //String to array conversion
 
        //running a character susbtituion 
        /*
@@ -74,35 +74,32 @@ class EncrDecr
 		}
     }
 
- String fh=xyz.substring(0,len/2);
+ /*String fh=xyz.substring(0,len/2);
  char[] firstHalf=fh.toCharArray();
 
  String lh=xyz.substring(len/2,len);
  char[] lastHalf=lh.toCharArray();
-
-
-
+*/
 
     final int mid = (xyz.length()+1) / 2;
     String[] spstr = {
         xyz.substring(0, mid),
         xyz.substring(mid),
-    };
+    };  //splitting the string into two
 
-    System.out.println(spstr[0]);
-    System.out.println(spstr[1]);
-
-    String firstMix=spstr[1]+spstr[0];
-    System.out.println(firstMix);
+    String firstMix=spstr[1]+spstr[0];  //swapping the first half of string with the last half
+    System.out.println(firstMix); 
 
 
+//incomplete process
 
-	return cArray;	
+	return cArray;	//returning the encrypted word
 	}
 
 	public static void main(String[] args)
 	{
 	 
-	 System.out.println(encrp("aucflo"));
+	 System.out.println(encrp("aucflo")); //input string for encryption
+
 	}
 }
