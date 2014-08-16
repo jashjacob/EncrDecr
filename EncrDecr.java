@@ -8,38 +8,24 @@ class EncrDecr
 	{
        xyz=xyz.toUpperCase(); //  Converting string to uppercase
        int len=xyz.length();  //length of string
-
        final int mid = (xyz.length()+1) / 2;
-       String[] spstr = {xyz.substring(0, mid),xyz.substring(mid)};  //splitting the string into half
+        
+        //Swap 1
+        String[] spstr = {xyz.substring(0, mid),xyz.substring(mid)};  //splitting the string into half
+        String firstMix=spstr[1]+spstr[0];  //swapping the first half of string with the last half
 
-    String firstMix=spstr[1]+spstr[0];  //swapping the first half of string with the last half
-    
-    char[] chars=firstMix.toCharArray(); // converting the string into an array for swapping characters
+	    char[] chars=firstMix.toCharArray(); // converting the string into an array for swapping characters
 
-     // Swapping first two chars with last two chars
-    swap( chars, 0, chars.length - 2 );
-    swap( chars, 1, chars.length - 1 );
+	     // Swap 2
+	    swap( chars, 0, chars.length - 2 );
+	    swap( chars, 1, chars.length - 1 );
 
-     // Swapping middle 4 characters.
-    swap( chars, mid - 1, mid + 1 );
-    swap( chars, mid - 2, mid );
+	     // Swap 3
+	    swap( chars, mid - 1, mid + 1 );
+	    swap( chars, mid - 2, mid );
 
       //running a character susbtituion 
-       /*
-       A  - @
-       E  - =
-       I  - !
-       J  - ?
-       O  - *
-       P  - #
-       R  - &
-       S  - $
-       T  - +
-       V  - ^
-       X  - %
-       */
-
-
+    
        for (int i = 0;i < len; i++){
        	if(chars[i]=='A')
        	{
