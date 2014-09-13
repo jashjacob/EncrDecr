@@ -87,6 +87,6 @@ class Encryption
     {
  	    System.out.println("The string before encrpytion - abcdefghijklmnopqurstuvwxyz");	
 
-	    System.out.println(encryptWord("abcdefghijklmnopqurstuvwxyz")); //input string for encryption
+	    System.out.println(encryptWord("abcdefghijklmnopqrstuvwxyz")); //input string for encryption
     }
 }
