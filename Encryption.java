@@ -2,7 +2,6 @@ import java.lang.*;
 import java.io.*;
 import java.util.*;
 
-
 class Encryption
 { 
   static String encryptWord(String inputWord)
@@ -73,7 +72,7 @@ for (int i = 0;i < len; i++){
     chars[i]='%';
   }
 }
-String str=new String(chars);
+String str = new String(chars); //converting characters to stirng
 
 return str; //returning the encrypted string
 }
@@ -83,7 +82,7 @@ public static void swap( char[] chars, int l, int r )
   char tmp = chars[ l ];
   chars[ l ] = chars[ r ];
   chars[ r ] = tmp;
-  } //function to swap
+  } //method to swap characters
 
   public static void main(String[] args)
   {  

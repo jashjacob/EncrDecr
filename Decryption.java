@@ -13,6 +13,8 @@ String s2=new String();
 String firstswap=new String();
 char[] chars=inputWord.toCharArray();
 
+//running a reverse character susbtitution 
+
 for (int i = 0;i < len; i++){
   if(chars[i]=='@')
   {
@@ -67,7 +69,7 @@ swap( chars, mid - 2, mid );
 swap( chars, 0, chars.length - 2 );
 swap( chars, 1, chars.length - 1 );
 
-String s=new String(chars);
+String s = new String(chars);
 
 //swap 1
 if(len%2!=0)
@@ -82,7 +84,8 @@ else
   s2=s.substring(mid);
   firstswap=s2.concat(s1);
 }
-firstswap=firstswap.toLowerCase();
+
+firstswap=firstswap.toLowerCase(); //converting to lowercase after all swaps
 
 return firstswap; //returning the decrypted string
 }
@@ -91,7 +94,7 @@ public static void swap( char[] chars, int l, int r )
   char tmp = chars[ l ];
   chars[ l ] = chars[ r ];
   chars[ r ] = tmp;
-}
+} //method to swap the characters
 
  public static void main(String[] args)
   {  
