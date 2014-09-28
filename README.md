@@ -1,7 +1,7 @@
-Simple Encryption
+Simple Encryption and Decryption
 ========
 
-Simple encryption in Java
+The original code only has Encryption class with the swaps given below. Later it was updated to reverse the same with a Decryption class.
 
 SWAP 1 - Splitting the input string into two and swapping
 
